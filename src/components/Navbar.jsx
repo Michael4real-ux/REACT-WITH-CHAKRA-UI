@@ -2,7 +2,7 @@ import { Flex,Box, Heading,Text, Button, Spacer, HStack } from "@chakra-ui/react
 
 export const Navbar = () => {
   return (
-    <Flex as="nav" p="10px" alignItems="center">
+    <Flex as="nav" p="10px" alignItems="center" mb="40px">
     <Heading as="h1">Test Tasks</Heading>
     <Spacer/>
 
@@ -13,7 +13,7 @@ export const Navbar = () => {
     </HStack>
     </Flex>
 
-    
+
 //   <Flex bg="gray.200" justify="space-between" wrap="wrap" gap="2">
 //      <Box w="150px" h="50px" bg="red">1</Box>
 //      <Box w="150px" h="50px" bg="blue">2</Box>
