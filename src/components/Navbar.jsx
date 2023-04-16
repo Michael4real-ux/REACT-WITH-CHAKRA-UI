@@ -8,6 +8,8 @@ import {
   Spacer,
   HStack,
   useToast,
+  Avatar,
+  AvatarBadge,
 } from "@chakra-ui/react";
 
 export const Navbar = () => {
@@ -29,9 +31,12 @@ export const Navbar = () => {
       <Spacer />
 
       <HStack spacing="20px">
-        <Box bg="gray.200" p="10px">
-          M
-        </Box>
+        {/* name="mario" bg="purple" */}
+        <Avatar src="/img/mario.png" >
+          <AvatarBadge width="1.3em" bg="teal.500">
+            <Text fontSize="xs" color="white">3</Text>
+          </AvatarBadge>
+        </Avatar>
         <Text>michael@gmail.com</Text>
         <Button colorScheme="purple" onClick={showToast}>
           Logout
